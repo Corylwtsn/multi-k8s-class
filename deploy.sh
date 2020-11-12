@@ -3,7 +3,7 @@ docker build -t corylwtsn/multi-server:latest -t corylwtsn/multi-server:$SHA -f 
 docker build -t corylwtsn/multi-worker:latest -t corylwtsn/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 
 docker push corylwtsn/multi-client:latest
-docker push corylwtsn/mulit-server:latest
+docker push corylwtsn/multi-server:latest
 docker push corylwtsn/multi-worker:latest
 docker push corylwtsn/multi-client:$SHA
 docker push corylwtsn/multi-server:$SHA
