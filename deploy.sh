@@ -6,7 +6,7 @@ docker push corylwtsn/multi-client:latest
 docker push corylwtsn/mulit-server:latest
 docker push corylwtsn/multi-worker:latest
 docker push corylwtsn/multi-client:$SHA
-docker push corylwtsn/mulit-server:$SHA
+docker push corylwtsn/multi-server:$SHA
 docker push corylwtsn/multi-worker:$SHA
 
 kubectl apply -f k8s
