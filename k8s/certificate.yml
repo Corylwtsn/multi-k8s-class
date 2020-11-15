@@ -5,6 +5,7 @@ metadata:
 spec:
   secretName: multi-k8s-corywtason-net
   issuerRef:
+    kind: ClusterIssuer
     name: letsencrypt
   commonName: multi-k8s.corywatson.net
   dnsNames:
