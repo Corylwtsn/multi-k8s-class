@@ -8,5 +8,8 @@ spec:
     email: 'corylwtsn@gmail.com'
     privateKeySecretRef:
       name: letsencrypt-prod
-    http01: {}
+    solvers:
+      - http01:
+          ingress:
+            class: nginx
 
