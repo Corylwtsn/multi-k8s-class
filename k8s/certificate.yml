@@ -5,14 +5,7 @@ metadata:
 spec:
   secretName: multi-k8s-corywtason-net
   issuerRef:
-    letsencrypt-prod
-  kind: ClusterIssuer
-  commonName: mulit-k8s.corywatson.net
+    name: letsencrypt-prod
+  commonName: multi-k8s.corywatson.net
   dnsNames:
     - multi-k8s.corywatson.net
-  acme:
-    config:
-      - http01:
-          ingressClass: nginx
-        domains:
-          - mulit-k8s.corywatson.net
